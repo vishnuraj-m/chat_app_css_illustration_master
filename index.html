@@ -3,82 +3,95 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Chat app CSS illustration</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- displays site properly based on user's device -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="styles.css">
+  <title>Frontend Mentor | [José Henrique Merlo]</title>
+
 </head>
 
 <body>
-  <main class="mobile">
-    <div class="header">
-      <div class="decs">
-        <div class="chevron">
-          <i class="fa-solid fa-chevron-left"></i>
-        </div>
-        <div class="avatar">
-          <img src="./images/avatar.jpg" alt="">
-        </div>
-        <div class="content">
-          <div class="name">
-            <h3>Samuel Green</h3>
+  <div class="container">
+    <div class="roundedPurpleModel"></div>
+    <div class="mobile">
+      <header>
+        <div class="note"></div>
+        <div class="flex">
+          <div class="content">
+            <i class="material-icons">chevron_left</i>
+            <div class="user">
+              <img src="./images/avatar.jpg" alt="avatar" height="30px" />
+              <h6>Samuel Green <br />
+                <p>Available to Walk</p>
+              </h6>
+            </div>
           </div>
-          <div class="status">
-            <p>Available to Walk</p>
-          </div>
+          <i class="material-icons">more_vert</i>
         </div>
-        <div class="dots">
-          <i class="fa-solid fa-ellipsis-vertical"></i>
+      </header>
+      <div class="chat">
+        <ul class="mensagens1">
+          <li>
+            That sounds great. I’d be happy with that.
+          </li>
+          <li>
+            Could you send over some pictures of your dog, please?
+          </li>
+        </ul>
+        <ul class="mensagens2">
+          <li class="imagens">
+            <img src="./images/dog-image-1.jpg" alt="dog" height="40px">
+            <img src="./images/dog-image-2.jpg" alt="dog" height="40px">
+            <img src="./images/dog-image-3.jpg" alt="dog" height="40px">
+          </li>
+          <li class="mensagem2">
+            Here are a few pictures. She’s a happy girl!
+          </li>
+          <li class="mensagem2">
+            Can you make it?
+          </li>
+        </ul>
+        <ul class="mensagens1">
+          <li>
+            She looks so happy! The time we discussed works. How long shall I take her out for?
+          </li>
+        </ul>
+        <ul class="prices">
+          <li>
+            <div class="w-80">
+              <div class="circle"></div>
+              <p class="action">30 minute walk</p>
+            </div>
+            <span class="price">$29</span>
+          </li>
+          <li>
+            <div class="w-80">
+              <div class="circle"></div>
+              <p class="action"> 1 hour walk</p>
+            </div>
+            <span class="price">$49</span>
+          </li>
+        </ul>
+
+        <div class="buttonSubmit">
+          <input type="text" placeholder="Type a message...">
+          <button>
+            <i class="material-icons">chevron_right</i>
+          </button>
         </div>
       </div>
     </div>
-    <div class="message">
-      <div class="text replay">
-        <p>That sounds great. I’d be happy with that.</p>
-      </div>
-      <div class="text replay">
-        <p>Could you send over some pictures of your dog, please?</p>
-      </div>
-      <div class="images">
-        <img src="./images/dog-image-1.jpg" alt="">
-        <img src="./images/dog-image-2.jpg" alt="">
-        <img src="./images/dog-image-3.jpg" alt="">
-      </div>
-      <div class="text user">
-        <p>Here are a few pictures. She’s a happy girl!</p>
-      </div>
-      <div class="text user user1">
-        <p>Can you make it?</p>
-      </div>
-      <div class="text replay">
-        <p>She looks so happy! The time we discussed works. How long shall I take her out for?</p>
-      </div>
-      <div class="offer">
-        <div>
-          <i class="fa-solid fa-o"></i>
-        </div>
-        <p>30 minute walk</p>
-        <span>$29</span>
-      </div>
-      <div class="offer">
-        <div><i class="fa-solid fa-o"></i></div>
-        <p class="hour">1 hour walk</p>
-        <span>$49</span>
-      </div>
-      <form action="#" class="form">
-        <input type="text" placeholder="Type a message…">
-        <div class="arrow">
-          <p>></p>
-        </div>
-      </form>
+    <div class="conteudo">
+      <h2>Simple booking</h2>
+      <p>Stay in touch with our dog walkers through the chat interface. This makes it easy to
+        discuss arrangements and make bookings. Once the walk has been completed you can rate
+        your walker and book again all through the chat.</p>
     </div>
-  </main>
+    <div class="roundedPinkModel"></div>
+  </div>
+
 </body>
 
 </html>
